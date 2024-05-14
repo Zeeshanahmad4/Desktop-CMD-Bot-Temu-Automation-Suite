@@ -1,0 +1,16 @@
+import json
+
+def load_email_config(file_path):
+    """Load email configuration settings from a JSON file."""
+    try:
+        with open(file_path, 'r') as config_file:
+            return json.load(config_file)
+    except FileNotFoundError:
+        print("Email configuration file not found.")
+    except json.JSONDecodeError:
+        print("Error decoding JSON from the email configuration file.")
+    return {}
+
+# Example of using the load_email_config function
+email_config = load_email_config("path_to/email_config.json")
+print(email_config)
