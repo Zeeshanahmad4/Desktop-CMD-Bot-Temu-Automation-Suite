@@ -1,0 +1,24 @@
+import pandas as pd
+
+# Define the data to populate the template
+data = {
+    "Product ID": [1001, 1002],
+    "Product Name": ["Widget A", "Widget B"],
+    "Category": ["Gadgets", "Gadgets"],
+    "Price": [19.99, 29.99],
+    "Stock": [100, 150],
+    "Description": ["High-quality gadget.", "Top-rated gadget."],
+    "Image URLs": ["http://example.com/images/widget_a.jpg", "http://example.com/images/widget_b.jpg"]
+}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Create a Pandas Excel writer using Openpyxl as the engine
+writer = pd.ExcelWriter('spreadsheet_template.xlsx', engine='openpyxl')
+
+# Convert the dataframe to an XlsxWriter Excel object
+df.to_excel(writer, sheet_name='Products', index=False)
+
+# Close the Pandas Excel writer and output the Excel file
+writer.save()
