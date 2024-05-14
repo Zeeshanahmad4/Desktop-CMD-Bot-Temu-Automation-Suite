@@ -65,7 +65,25 @@ Here are some simple examples of how to use the modules in the Temu Automation C
 ```python
 # Using the scraper module
 ```
-. from scraper.scraper import TemuScraper
-. scraper =TemuScraper(api_url="your_api_url", credentials_path="path_to_credentials")
-. data = scraper.fetch_sales_data()
-. scraper.update_google_sheet(data, "Sales Sheet")
+from scraper.scraper import TemuScraper
+scraper =TemuScraper(api_url="your_api_url", credentials_path="path_to_credentials")
+data = scraper.fetch_sales_data()
+scraper.update_google_sheet(data, "Sales Sheet")
+
+## Setup and Installation Instructions 🚀
+1. Clone the repository:
+```git clone https://github.com/Zeeshanahmad4/Desktop-CMD-Bot-Temu-Automation-Suite```
+
+2. Install required packages:
+```pip install -r requirements.txt```
+
+3. - Set up your `credentials.json` for Google Sheets API access.
+
+## Troubleshooting Tips 🔧
+- **Issue with API Authentication:** Ensure that your credentials.json file is correctly configured and has the necessary permissions.
+- **Google Sheets Update Error:** Check if the sheet name and structure align with what's expected by the script.
+
+## Contribution Guidelines 🤝
+Contributions are welcome! Please fork the project, create a new branch for your feature or fix, and submit a pull request to the main branch. For more details, check out our CONTRIBUTING.md.
+
+
