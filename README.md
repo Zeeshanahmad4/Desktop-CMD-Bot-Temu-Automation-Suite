@@ -28,3 +28,45 @@
   <strong>For discussion, queries, and freelance work. Do reach me.👆👆👆</strong>
 </div>
 
+
+- [🗺️ Project Overview](#project-overview-)
+- [✨ Features](#features-)
+   - [ To-Do Features](#to-do-features-)
+- [📋 Requirements](#requirements-)
+- [💡 Usage Examples](#usage-examples-)
+   - [🚀 Setup and Installation Instructions](#setup-and-installation-instructions-)
+- [🔧 Troubleshooting Tips](#troubleshooting-tips-)
+- [🤝 Contribution Guidelines](#contribution-guidelines-)
+
+
+## Project Overview 🗺️
+**Temu Automation Suite 🤖** is a robust desktop command-line application designed to automate and streamline various management tasks for Temu online store owners. This tool allows for efficient handling of sales data, bulk product uploads, and integration of sales into accounting systems, reducing manual effort and improving accuracy.
+
+## Features ✨
+- **Sales Data Scraper:** Automatically fetches sales information from your Temu store and updates a designated Google Sheets document.
+- **Bulk Product Uploader:** Simplifies the process of uploading product details from a spreadsheet directly into your Temu store.
+- **Automated Sale Entries:** Converts new sale notifications from emails into entries in your accounting software.
+- **Customizable Automation Scripts:** Offers flexibility to create and modify scripts for unique automation needs.
+
+### To-Do Features 📌
+- **Real-time Sales Notifications:** Implement a feature for real-time alerts on sales and stock levels.
+- **Enhanced Analytics Dashboard:** Develop a dashboard for more detailed analytics and sales trends.
+- **Multi-store Management:** Expand capabilities to manage multiple Temu stores from a single command-line interface.
+
+## Requirements 📋
+- Python 3.x
+- Requests library
+- Gspread library
+- OAuth2Client
+
+## Usage Examples 💡
+Here are some simple examples of how to use the modules in the Temu Automation Commander:
+
+```python
+# Using the scraper module
+```
+from scraper.scraper import TemuScraper
+scraper = TemuScraper(api_url="your_api_url", credentials_path="path_to_credentials")
+data = scraper.fetch_sales_data()
+scraper.update_google_sheet(data, "Sales Sheet")
+
