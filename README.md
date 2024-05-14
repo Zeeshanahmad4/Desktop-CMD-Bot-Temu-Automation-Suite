@@ -65,6 +65,7 @@ Here are some simple examples of how to use the modules in the Temu Automation C
 ```python
 # Using the scraper module
 ```
-from scraper.scraper import TemuScraper
-scraper =TemuScraper(api_url="your_api_url", credentials_path="path_to_credentials")
-
+. from scraper.scraper import TemuScraper
+. scraper =TemuScraper(api_url="your_api_url", credentials_path="path_to_credentials")
+. data = scraper.fetch_sales_data()
+. scraper.update_google_sheet(data, "Sales Sheet")
