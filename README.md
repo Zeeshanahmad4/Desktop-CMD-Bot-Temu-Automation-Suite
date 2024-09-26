@@ -1,4 +1,3 @@
-<h1 align="center">Desktop CMD Bot: Temu Automation Suite 🤖</h1>
 
 <div align="center">
   <a href="https://mail.google.com/mail/u/?authuser=ahmadzee26@gmail.com">
